@@ -39,7 +39,6 @@ export const LaunchProvider = ({ children }: { children: ReactNode }) => {
       );
 
       const data: Launch[] = await response.json();
-      console.log(data);
       const filteredData = query.trim()
         ? data.filter((launch) =>
             launch.mission_name.toLowerCase().includes(query.toLowerCase()),
