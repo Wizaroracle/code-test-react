@@ -6,20 +6,6 @@ export interface Launch {
   upcoming: boolean;
   details: string | null;
 
-  // Rocket information
-  rocket: {
-    rocket_name: string;
-    rocket_type: string;
-    first_stage: {
-      cores: Array<{
-        core_serial: string;
-        reused: boolean;
-        flight?: number;
-        land_success?: boolean | null;
-      }>;
-    };
-  };
-
   links: {
     mission_patch_small: string | null;
     mission_patch?: string | null;
